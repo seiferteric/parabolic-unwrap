@@ -45,7 +45,7 @@ while not it.finished:
     axB = it.multi_index[1]
 
     radius = ((size[0]-float(axA)-1)/size[0])*center[0]
-    cx = math.cos(2*math.pi*axB/size[1])*radius + center[1]
+    cx = -math.cos(2*math.pi*axB/size[1])*radius + center[1]
     cy = math.sin(2*math.pi*axB/size[1])*radius + center[0]
     r = raw_img[cy, cx, 0]
     g = raw_img[cy, cx, 1]
